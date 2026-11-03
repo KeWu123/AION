@@ -1,0 +1,185 @@
+study,dataset,fraction,active_window,method,reference,metric,ratio,ci_low,ci_high,replicates,defined,undefined_reason,interpretation
+concurrency,tpch,0.9,1,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,cohort_wor,forward_wor,continuation_seconds,1.0143462818194184,0.9513225373022817,1.0657938751880798,20,True,,matched query definitions
+concurrency,tpch,0.9,1,cohort_wor,forward_wor,actual_returned_bytes,1.0,0.9586206896551724,1.042857142857143,20,True,,matched query definitions
+concurrency,tpch,0.9,1,cohort_wor,forward_wor,new_ids,1.001665186500888,0.963550787706026,1.041991969663172,20,True,,matched query definitions
+concurrency,tpch,0.9,1,cohort_wor,forward_wor,new_source_rows,1.001665186500888,0.963550787706026,1.041991969663172,20,True,,matched query definitions
+concurrency,tpch,0.9,1,atomic_wor,forward_wor,continuation_seconds,1.0272114980444083,0.9885749049926928,1.069614341100221,20,True,,matched query definitions
+concurrency,tpch,0.9,1,atomic_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,atomic_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,atomic_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,1,coordinated_wor,forward_wor,continuation_seconds,1.015967446958727,0.9468919641949011,1.0644825659855706,20,True,,matched query definitions
+concurrency,tpch,0.9,1,coordinated_wor,forward_wor,actual_returned_bytes,0.9928571428571429,0.9452054794520548,1.0142857142857142,20,True,,matched query definitions
+concurrency,tpch,0.9,1,coordinated_wor,forward_wor,new_ids,0.9906749555950266,0.9484453827593771,1.01353591160221,20,True,,matched query definitions
+concurrency,tpch,0.9,1,coordinated_wor,forward_wor,new_source_rows,0.9906749555950266,0.9484453827593771,1.01353591160221,20,True,,matched query definitions
+concurrency,tpch,0.9,1,rebase,forward_wor,continuation_seconds,11.209699315563629,10.595596257004084,11.779727742297018,20,True,,matched query definitions
+concurrency,tpch,0.9,1,rebase,forward_wor,actual_returned_bytes,7.314285714285714,7.013698630136986,7.420289855072464,20,True,,matched query definitions
+concurrency,tpch,0.9,1,rebase,forward_wor,new_ids,7.275310834813499,6.987525322529054,7.321231078590181,20,True,,matched query definitions
+concurrency,tpch,0.9,1,rebase,forward_wor,new_source_rows,7.275310834813499,6.987525322529054,7.321231078590181,20,True,,matched query definitions
+concurrency,tpch,0.9,1,indexed_wor,forward_wor,continuation_seconds,1.1642793198266805,1.1150670970857557,1.2476001631621012,20,True,,matched query definitions
+concurrency,tpch,0.9,1,indexed_wor,forward_wor,actual_returned_bytes,57.249888392857144,55.01342807112069,57.804234601449274,20,True,,matched query definitions
+concurrency,tpch,0.9,1,indexed_wor,forward_wor,new_ids,0.9943383658969804,0.9622561040622668,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,2,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,2,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,2,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,2,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,2,cohort_wor,forward_wor,continuation_seconds,0.9049772890854719,0.8485314122555015,0.9565109021753683,20,True,,matched query definitions
+concurrency,tpch,0.9,2,cohort_wor,forward_wor,actual_returned_bytes,0.7714285714285715,0.7379310344827587,0.8391608391608392,20,True,,matched query definitions
+concurrency,tpch,0.9,2,cohort_wor,forward_wor,new_ids,0.7698258111191496,0.7394412182833021,0.8415570175438597,20,True,,matched query definitions
+concurrency,tpch,0.9,2,cohort_wor,forward_wor,new_source_rows,0.7698258111191496,0.7394412182833021,0.8415570175438597,20,True,,matched query definitions
+concurrency,tpch,0.9,2,atomic_wor,forward_wor,continuation_seconds,1.0192113091089663,0.9737698937911239,1.055829391341088,20,True,,matched query definitions
+concurrency,tpch,0.9,2,atomic_wor,forward_wor,actual_returned_bytes,0.5,0.48951048951048953,0.5214285714285715,20,True,,matched query definitions
+concurrency,tpch,0.9,2,atomic_wor,forward_wor,new_ids,0.5059268740608827,0.49402303846989787,0.5261473364435283,20,True,,matched query definitions
+concurrency,tpch,0.9,2,atomic_wor,forward_wor,new_source_rows,0.5059268740608827,0.49402303846989787,0.5261473364435283,20,True,,matched query definitions
+concurrency,tpch,0.9,2,coordinated_wor,forward_wor,continuation_seconds,0.9145869334250454,0.8623909648163884,0.9670392251177947,20,True,,matched query definitions
+concurrency,tpch,0.9,2,coordinated_wor,forward_wor,actual_returned_bytes,0.5,0.4791666666666667,0.5072463768115942,20,True,,matched query definitions
+concurrency,tpch,0.9,2,coordinated_wor,forward_wor,new_ids,0.4991374033056931,0.4836036019269445,0.5038312048861744,20,True,,matched query definitions
+concurrency,tpch,0.9,2,coordinated_wor,forward_wor,new_source_rows,0.4991374033056931,0.4836036019269445,0.5038312048861744,20,True,,matched query definitions
+concurrency,tpch,0.9,2,rebase,forward_wor,continuation_seconds,11.732483127596915,11.088137764594787,12.168024754843845,20,True,,matched query definitions
+concurrency,tpch,0.9,2,rebase,forward_wor,actual_returned_bytes,3.657142857142857,3.5310344827586206,3.710144927536232,20,True,,matched query definitions
+concurrency,tpch,0.9,2,rebase,forward_wor,new_ids,3.6471701263286773,3.528562967748883,3.6610245237696217,20,True,,matched query definitions
+concurrency,tpch,0.9,2,rebase,forward_wor,new_source_rows,3.6471701263286773,3.528562967748883,3.6610245237696217,20,True,,matched query definitions
+concurrency,tpch,0.9,2,indexed_wor,forward_wor,continuation_seconds,1.1844207465776269,1.138222879212983,1.2194264276383484,20,True,,matched query definitions
+concurrency,tpch,0.9,2,indexed_wor,forward_wor,actual_returned_bytes,57.249888392857144,55.59649784482759,57.804234601449274,20,True,,matched query definitions
+concurrency,tpch,0.9,2,indexed_wor,forward_wor,new_ids,0.9969391730202014,0.9754148871124828,1.000723468195225,20,True,,matched query definitions
+concurrency,tpch,0.9,4,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,4,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,4,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,4,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,4,cohort_wor,forward_wor,continuation_seconds,0.7772849061979943,0.7203940991913106,0.813838742904982,20,True,,matched query definitions
+concurrency,tpch,0.9,4,cohort_wor,forward_wor,actual_returned_bytes,0.5142857142857142,0.4714285714285714,0.5428571428571428,20,True,,matched query definitions
+concurrency,tpch,0.9,4,cohort_wor,forward_wor,new_ids,0.5190338379341051,0.47674029451137884,0.5447649631803333,20,True,,matched query definitions
+concurrency,tpch,0.9,4,cohort_wor,forward_wor,new_source_rows,0.5190338379341051,0.47674029451137884,0.5447649631803333,20,True,,matched query definitions
+concurrency,tpch,0.9,4,atomic_wor,forward_wor,continuation_seconds,1.0031672821828967,0.9551520299117784,1.0649407304440766,20,True,,matched query definitions
+concurrency,tpch,0.9,4,atomic_wor,forward_wor,actual_returned_bytes,0.2714285714285714,0.2602739726027397,0.3142857142857143,20,True,,matched query definitions
+concurrency,tpch,0.9,4,atomic_wor,forward_wor,new_ids,0.2772150489759573,0.2641864972542263,0.3130008904719501,20,True,,matched query definitions
+concurrency,tpch,0.9,4,atomic_wor,forward_wor,new_source_rows,0.2772150489759573,0.2641864972542263,0.3130008904719501,20,True,,matched query definitions
+concurrency,tpch,0.9,4,coordinated_wor,forward_wor,continuation_seconds,0.8220126971644856,0.7562480553648586,0.8740711589488744,20,True,,matched query definitions
+concurrency,tpch,0.9,4,coordinated_wor,forward_wor,actual_returned_bytes,0.29285714285714287,0.2620689655172414,0.31654676258992803,20,True,,matched query definitions
+concurrency,tpch,0.9,4,coordinated_wor,forward_wor,new_ids,0.297306322350846,0.26940484479204935,0.315613133794952,20,True,,matched query definitions
+concurrency,tpch,0.9,4,coordinated_wor,forward_wor,new_source_rows,0.297306322350846,0.26940484479204935,0.315613133794952,20,True,,matched query definitions
+concurrency,tpch,0.9,4,rebase,forward_wor,continuation_seconds,11.878516696096238,11.514205225501446,12.546544598814826,20,True,,matched query definitions
+concurrency,tpch,0.9,4,rebase,forward_wor,actual_returned_bytes,1.8285714285714285,1.7534246575342465,1.855072463768116,20,True,,matched query definitions
+concurrency,tpch,0.9,4,rebase,forward_wor,new_ids,1.823686553873553,1.7493993913832684,1.8301033230941077,20,True,,matched query definitions
+concurrency,tpch,0.9,4,rebase,forward_wor,new_source_rows,1.823686553873553,1.7493993913832684,1.8301033230941077,20,True,,matched query definitions
+concurrency,tpch,0.9,4,indexed_wor,forward_wor,continuation_seconds,1.1102178456243024,1.0768225482790001,1.1706526737028398,20,True,,matched query definitions
+concurrency,tpch,0.9,4,indexed_wor,forward_wor,actual_returned_bytes,57.249888392857144,55.0958904109589,57.804234601449274,20,True,,matched query definitions
+concurrency,tpch,0.9,4,indexed_wor,forward_wor,new_ids,0.9969946571682992,0.9677181526146716,1.000779162956367,20,True,,matched query definitions
+concurrency,tpch,0.9,8,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,8,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,8,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,8,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,matched query definitions
+concurrency,tpch,0.9,8,cohort_wor,forward_wor,continuation_seconds,0.7352551715004934,0.6951329235543002,0.7687440105343902,20,True,,matched query definitions
+concurrency,tpch,0.9,8,cohort_wor,forward_wor,actual_returned_bytes,0.3142857142857143,0.2714285714285714,0.3188405797101449,20,True,,matched query definitions
+concurrency,tpch,0.9,8,cohort_wor,forward_wor,new_ids,0.3156547387166787,0.2769471100200848,0.31890203079669716,20,True,,matched query definitions
+concurrency,tpch,0.9,8,cohort_wor,forward_wor,new_source_rows,0.3156547387166787,0.2769471100200848,0.31890203079669716,20,True,,matched query definitions
+concurrency,tpch,0.9,8,atomic_wor,forward_wor,continuation_seconds,1.0091675585566668,0.9941175687103152,1.0464417248611209,20,True,,matched query definitions
+concurrency,tpch,0.9,8,atomic_wor,forward_wor,actual_returned_bytes,0.17142857142857143,0.16783216783216784,0.18571428571428572,20,True,,matched query definitions
+concurrency,tpch,0.9,8,atomic_wor,forward_wor,new_ids,0.1824252879959931,0.1771027524947911,0.18730477465417225,20,True,,matched query definitions
+concurrency,tpch,0.9,8,atomic_wor,forward_wor,new_source_rows,0.1824252879959931,0.1771027524947911,0.18730477465417225,20,True,,matched query definitions
+concurrency,tpch,0.9,8,coordinated_wor,forward_wor,continuation_seconds,0.735411415916318,0.7010922816398799,0.770267846972835,20,True,,matched query definitions
+concurrency,tpch,0.9,8,coordinated_wor,forward_wor,actual_returned_bytes,0.17142857142857143,0.12857142857142856,0.17391304347826086,20,True,,matched query definitions
+concurrency,tpch,0.9,8,coordinated_wor,forward_wor,new_ids,0.18031053480995046,0.13814214949629877,0.18414345104272012,20,True,,matched query definitions
+concurrency,tpch,0.9,8,coordinated_wor,forward_wor,new_source_rows,0.18031053480995046,0.13814214949629877,0.18414345104272012,20,True,,matched query definitions
+concurrency,tpch,0.9,8,rebase,forward_wor,continuation_seconds,12.728536663043286,12.454568346951014,13.249947688368712,20,True,,matched query definitions
+concurrency,tpch,0.9,8,rebase,forward_wor,actual_returned_bytes,0.9142857142857143,0.8951048951048951,0.927536231884058,20,True,,matched query definitions
+concurrency,tpch,0.9,8,rebase,forward_wor,new_ids,0.9117925315821693,0.8902412519017605,0.9152561309424054,20,True,,matched query definitions
+concurrency,tpch,0.9,8,rebase,forward_wor,new_source_rows,0.9117925315821693,0.8902412519017605,0.9152561309424054,20,True,,matched query definitions
+concurrency,tpch,0.9,8,indexed_wor,forward_wor,continuation_seconds,1.1034221549050574,1.0741750630469438,1.1679864461212441,20,True,,matched query definitions
+concurrency,tpch,0.9,8,indexed_wor,forward_wor,actual_returned_bytes,57.249888392857144,56.4684222027972,57.84771286231884,20,True,,matched query definitions
+concurrency,tpch,0.9,8,indexed_wor,forward_wor,new_ids,0.9969391730202014,0.9895050817498895,1.0017302003683652,20,True,,matched query definitions
+history,tpcds,0.1,4,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.1,4,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.1,4,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.1,4,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.1,4,cohort_wor,forward_wor,continuation_seconds,0.8847507302332193,0.7841760550730174,1.0730717101240193,20,True,,same-policy execution
+history,tpcds,0.1,4,cohort_wor,forward_wor,actual_returned_bytes,0.7449591280653951,0.7035445757250268,0.8043606364172068,20,True,,same-policy execution
+history,tpcds,0.1,4,cohort_wor,forward_wor,new_ids,0.7446877354915894,0.7036136579386921,0.8042273488851656,20,True,,same-policy execution
+history,tpcds,0.1,4,cohort_wor,forward_wor,new_source_rows,0.7446877354915894,0.7036136579386921,0.8042273488851656,20,True,,same-policy execution
+history,tpcds,0.1,4,atomic_wor,forward_wor,continuation_seconds,0.9164865778865389,0.8158560429198082,1.1044419735310271,20,True,,same-policy execution
+history,tpcds,0.1,4,atomic_wor,forward_wor,actual_returned_bytes,0.3444141689373297,0.30934479054779807,0.3778538812785388,20,True,,same-policy execution
+history,tpcds,0.1,4,atomic_wor,forward_wor,new_ids,0.3444680497783984,0.30952124008329585,0.37754860916050276,20,True,,same-policy execution
+history,tpcds,0.1,4,atomic_wor,forward_wor,new_source_rows,0.3444680497783984,0.30952124008329585,0.37754860916050276,20,True,,same-policy execution
+history,tpcds,0.1,4,coordinated_wor,forward_wor,continuation_seconds,0.8902403609568207,0.7883722004585406,1.0944811802435004,20,True,,same-policy execution
+history,tpcds,0.1,4,coordinated_wor,forward_wor,actual_returned_bytes,0.3138964577656676,0.30934479054779807,0.35105204872646734,20,True,,same-policy execution
+history,tpcds,0.1,4,coordinated_wor,forward_wor,new_ids,0.3143123539153869,0.3090489575030415,0.35061094248579655,20,True,,same-policy execution
+history,tpcds,0.1,4,coordinated_wor,forward_wor,new_source_rows,0.3143123539153869,0.3090489575030415,0.35061094248579655,20,True,,same-policy execution
+history,tpcds,0.1,4,rebase,forward_wor,continuation_seconds,0.7409422083172305,0.6666876498114371,0.9155127604481897,20,True,,same-policy execution
+history,tpcds,0.1,4,rebase,forward_wor,actual_returned_bytes,0.3138964577656676,0.2790190735694823,0.365296803652968,20,True,,same-policy execution
+history,tpcds,0.1,4,rebase,forward_wor,new_ids,0.3138951213593266,0.2790178856527348,0.36524305694884723,20,True,,same-policy execution
+history,tpcds,0.1,4,rebase,forward_wor,new_source_rows,0.3138951213593266,0.2790178856527348,0.36524305694884723,20,True,,same-policy execution
+history,tpcds,0.1,4,indexed_wor,forward_wor,continuation_seconds,1.2810776184205914,1.060943570806987,1.4768783252118005,20,True,,same-policy execution
+history,tpcds,0.1,4,indexed_wor,forward_wor,actual_returned_bytes,20.16305347411444,19.85571826355341,21.80200353565115,20,True,,same-policy execution
+history,tpcds,0.1,4,indexed_wor,forward_wor,new_ids,0.9403825767090569,0.9096946964633155,1.0159998527056138,20,True,,same-policy execution
+history,tpcds,0.9,4,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.9,4,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.9,4,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.9,4,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpcds,0.9,4,cohort_wor,forward_wor,continuation_seconds,1.0124631396168091,0.9105826637986489,1.2383888335974647,20,True,,same-policy execution
+history,tpcds,0.9,4,cohort_wor,forward_wor,actual_returned_bytes,0.8157894736842105,0.76,0.8854166666666666,20,True,,same-policy execution
+history,tpcds,0.9,4,cohort_wor,forward_wor,new_ids,0.8162173286684503,0.7599359099613116,0.8859267925789738,20,True,,same-policy execution
+history,tpcds,0.9,4,cohort_wor,forward_wor,new_source_rows,0.8162173286684503,0.7599359099613116,0.8859267925789738,20,True,,same-policy execution
+history,tpcds,0.9,4,atomic_wor,forward_wor,continuation_seconds,0.9625213411692214,0.8691173228133493,1.1437519445626319,20,True,,same-policy execution
+history,tpcds,0.9,4,atomic_wor,forward_wor,actual_returned_bytes,0.34210526315789475,0.30526315789473685,0.3786407766990291,20,True,,same-policy execution
+history,tpcds,0.9,4,atomic_wor,forward_wor,new_ids,0.3376003292858613,0.3065651368594361,0.376360867893767,20,True,,same-policy execution
+history,tpcds,0.9,4,atomic_wor,forward_wor,new_source_rows,0.3376003292858613,0.3065651368594361,0.376360867893767,20,True,,same-policy execution
+history,tpcds,0.9,4,coordinated_wor,forward_wor,continuation_seconds,0.9531216037682279,0.8908622589041907,1.1548209091266344,20,True,,same-policy execution
+history,tpcds,0.9,4,coordinated_wor,forward_wor,actual_returned_bytes,0.3684210526315789,0.34,0.3915343915343915,20,True,,same-policy execution
+history,tpcds,0.9,4,coordinated_wor,forward_wor,new_ids,0.36530150236674214,0.33428825048418337,0.39102204408817637,20,True,,same-policy execution
+history,tpcds,0.9,4,coordinated_wor,forward_wor,new_source_rows,0.36530150236674214,0.33428825048418337,0.39102204408817637,20,True,,same-policy execution
+history,tpcds,0.9,4,rebase,forward_wor,continuation_seconds,1.1333740062414697,1.0706820117193458,1.3473863664488908,20,True,,same-policy execution
+history,tpcds,0.9,4,rebase,forward_wor,actual_returned_bytes,0.6736842105263158,0.64,0.6918918918918919,20,True,,same-policy execution
+history,tpcds,0.9,4,rebase,forward_wor,new_ids,0.6743774439185017,0.6402751182148579,0.6941784594525887,20,True,,same-policy execution
+history,tpcds,0.9,4,rebase,forward_wor,new_source_rows,0.6743774439185017,0.6402751182148579,0.6941784594525887,20,True,,same-policy execution
+history,tpcds,0.9,4,indexed_wor,forward_wor,continuation_seconds,1.029401917570534,0.9588110194641689,1.1973299560472637,20,True,,same-policy execution
+history,tpcds,0.9,4,indexed_wor,forward_wor,actual_returned_bytes,21.644243421052632,20.57203125,22.229222972972973,20,True,,same-policy execution
+history,tpcds,0.9,4,indexed_wor,forward_wor,new_ids,1.0103313438979213,0.9639652198870101,1.0650317672291691,20,True,,same-policy execution
+history,tpch,0.1,4,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.1,4,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.1,4,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.1,4,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.1,4,cohort_wor,forward_wor,continuation_seconds,0.892045259943963,0.8506138916429355,0.9634935250915662,20,True,,same-policy execution
+history,tpch,0.1,4,cohort_wor,forward_wor,actual_returned_bytes,0.5017421602787456,0.5,0.546031746031746,20,True,,same-policy execution
+history,tpch,0.1,4,cohort_wor,forward_wor,new_ids,0.5010266102824198,0.5003945792968325,0.5466732746871515,20,True,,same-policy execution
+history,tpch,0.1,4,cohort_wor,forward_wor,new_source_rows,0.5010266102824198,0.5003945792968325,0.5466732746871515,20,True,,same-policy execution
+history,tpch,0.1,4,atomic_wor,forward_wor,continuation_seconds,0.997990963615191,0.9490269536573291,1.0873230556645777,20,True,,same-policy execution
+history,tpch,0.1,4,atomic_wor,forward_wor,actual_returned_bytes,0.29965156794425085,0.27258320126782887,0.30139372822299654,20,True,,same-policy execution
+history,tpch,0.1,4,atomic_wor,forward_wor,new_ids,0.3009123913900711,0.27393690027068746,0.30127856365614797,20,True,,same-policy execution
+history,tpch,0.1,4,atomic_wor,forward_wor,new_source_rows,0.3009123913900711,0.27393690027068746,0.30127856365614797,20,True,,same-policy execution
+history,tpch,0.1,4,coordinated_wor,forward_wor,continuation_seconds,0.9517831405056633,0.8980180682968462,1.0396784203173668,20,True,,same-policy execution
+history,tpch,0.1,4,coordinated_wor,forward_wor,actual_returned_bytes,0.29965156794425085,0.27258320126782887,0.29965156794425085,20,True,,same-policy execution
+history,tpch,0.1,4,coordinated_wor,forward_wor,new_ids,0.30051806426172445,0.2736537104223678,0.3008343655147069,20,True,,same-policy execution
+history,tpch,0.1,4,coordinated_wor,forward_wor,new_source_rows,0.30051806426172445,0.2736537104223678,0.3008343655147069,20,True,,same-policy execution
+history,tpch,0.1,4,rebase,forward_wor,continuation_seconds,2.9707098363381252,2.820545275043212,3.2266251450045638,20,True,,same-policy execution
+history,tpch,0.1,4,rebase,forward_wor,actual_returned_bytes,0.3344947735191638,0.30427892234548337,0.3344947735191638,20,True,,same-policy execution
+history,tpch,0.1,4,rebase,forward_wor,new_ids,0.33417184504303604,0.30431283200633985,0.33440374462526534,20,True,,same-policy execution
+history,tpch,0.1,4,rebase,forward_wor,new_source_rows,0.33417184504303604,0.30431283200633985,0.33440374462526534,20,True,,same-policy execution
+history,tpch,0.1,4,indexed_wor,forward_wor,continuation_seconds,2.877881068063181,2.7015266634576895,3.26737143058758,20,True,,same-policy execution
+history,tpch,0.1,4,indexed_wor,forward_wor,actual_returned_bytes,85.75261324041811,78.00710789161393,88.2961400261324,20,True,,same-policy execution
+history,tpch,0.1,4,indexed_wor,forward_wor,new_ids,1.0001903648205812,0.9113277322276541,1.0496852181716818,20,True,,same-policy execution
+history,tpch,0.9,4,forward_wor,forward_wor,continuation_seconds,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.9,4,forward_wor,forward_wor,actual_returned_bytes,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.9,4,forward_wor,forward_wor,new_ids,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.9,4,forward_wor,forward_wor,new_source_rows,1.0,1.0,1.0,20,True,,same-policy execution
+history,tpch,0.9,4,cohort_wor,forward_wor,continuation_seconds,0.8156592558922083,0.7272015799999805,0.8885590344531857,20,True,,same-policy execution
+history,tpch,0.9,4,cohort_wor,forward_wor,actual_returned_bytes,0.5,0.47761194029850745,0.5625,20,True,,same-policy execution
+history,tpch,0.9,4,cohort_wor,forward_wor,new_ids,0.5051094890510949,0.4817467652495379,0.5846228239845261,20,True,,same-policy execution
+history,tpch,0.9,4,cohort_wor,forward_wor,new_source_rows,0.5051094890510949,0.4817467652495379,0.5846228239845261,20,True,,same-policy execution
+history,tpch,0.9,4,atomic_wor,forward_wor,continuation_seconds,1.022231782342779,0.9292688733677884,1.0634500458068807,20,True,,same-policy execution
+history,tpch,0.9,4,atomic_wor,forward_wor,actual_returned_bytes,0.28125,0.26865671641791045,0.296875,20,True,,same-policy execution
+history,tpch,0.9,4,atomic_wor,forward_wor,new_ids,0.3035279805352798,0.28673752310536044,0.3092330239374695,20,True,,same-policy execution
+history,tpch,0.9,4,atomic_wor,forward_wor,new_source_rows,0.3035279805352798,0.28673752310536044,0.3092330239374695,20,True,,same-policy execution
+history,tpch,0.9,4,coordinated_wor,forward_wor,continuation_seconds,0.8500003404718152,0.7605246660270348,0.925039793736762,20,True,,same-policy execution
+history,tpch,0.9,4,coordinated_wor,forward_wor,actual_returned_bytes,0.28125,0.26865671641791045,0.2903225806451613,20,True,,same-policy execution
+history,tpch,0.9,4,coordinated_wor,forward_wor,new_ids,0.30194647201946473,0.2830992401565738,0.3065072015379206,20,True,,same-policy execution
+history,tpch,0.9,4,coordinated_wor,forward_wor,new_source_rows,0.30194647201946473,0.2830992401565738,0.3065072015379206,20,True,,same-policy execution
+history,tpch,0.9,4,rebase,forward_wor,continuation_seconds,13.461140215061448,12.117870954997501,13.861728078519816,20,True,,same-policy execution
+history,tpch,0.9,4,rebase,forward_wor,actual_returned_bytes,2.0,1.9104477611940298,2.064516129032258,20,True,,same-policy execution
+history,tpch,0.9,4,rebase,forward_wor,new_ids,1.9931873479318736,1.886253741653235,2.007105230920005,20,True,,same-policy execution
+history,tpch,0.9,4,rebase,forward_wor,new_source_rows,1.9931873479318736,1.886253741653235,2.007105230920005,20,True,,same-policy execution
+history,tpch,0.9,4,indexed_wor,forward_wor,continuation_seconds,1.148903238418657,1.04915458201572,1.2134819275545108,20,True,,same-policy execution
+history,tpch,0.9,4,indexed_wor,forward_wor,actual_returned_bytes,85.5545654296875,84.1044776119403,88.859375,20,True,,same-policy execution
+history,tpch,0.9,4,indexed_wor,forward_wor,new_ids,1.0002433090024332,0.9993974451675103,1.0444043321299639,20,True,,same-policy execution

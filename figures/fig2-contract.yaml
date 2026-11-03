@@ -1,0 +1,18 @@
+figure: source_access_and_continuation_time
+size_inches: [7, 4.45]
+inputs:
+  - results/file_streaming/cell_summary.csv
+  - results/file_streaming/paired_ratios.csv
+methods: [atomic_wor, coordinated_wor, cohort_wor]
+datasets: [tpch, tpcds]
+functions: [affinity, weighted_price]
+initial_exposure_fractions: [0.1, 0.9]
+panels:
+  a: new source rows relative to sequential sampling without replacement
+  b: complete continuation time relative to sequential sampling without replacement
+  c: independent-epoch continuation time relative to full-prefix Rebase
+uncertainty:
+  a_b: retained pointwise 95 percent paired-bootstrap intervals
+  c: point estimates
+replicates: 20
+replicate_filtering: none

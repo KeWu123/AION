@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "sessions": 960,
+  "primary_sessions": 480,
+  "controlled_sessions": 480,
+  "queries": 11520,
+  "reports": 30992,
+  "censored": 0,
+  "final_exclusions": 0,
+  "all_report_exclusions": 0,
+  "input": {
+    "tpch": {
+      "input_seconds": 0.9356418999377638,
+      "population": 6001215,
+      "normalizers": [
+        104949.5,
+        104649.5,
+        50.0
+      ],
+      "array_payload_bytes": 144029160,
+      "file_sha256": {
+        "data/lo_data.npz": "0bae1ff229b229bf669b6c1f28cd18cd89857a46c1f255eae0e9bdbc49e6e176"
+      },
+      "normalized_arrays_sha256": [
+        "f629de8d514f2e275245eb9233fcb1d05a8522f1f8cc8301fa9c0be91c275d88",
+        "c96dbf5fcf09103081fee394de5baba2b8bcf02de844ccbb9abe93dc50311baa",
+        "8da5d6d423fd898e1f171f31638f915a8aca2886e575dc9be6ee1b3af79ff797"
+      ],
+      "hash_seconds_included": 0.598134099971503,
+      "population_order": "TPC-DS ORDER BY rowid; TPC-H retained archive array order"
+    },
+    "tpcds": {
+      "input_seconds": 0.5378022000659257,
+      "population": 2637338,
+      "normalizers": [
+        19308.0,
+        19308.0,
+        100.0
+      ],
+      "array_payload_bytes": 63296112,
+      "file_sha256": {
+        "data/tpcds_sf1.duckdb": "e0ed2723061f44debce1c3909ec6b109974c7882c00474987a80d9547b59bb2e"
+      },
+      "normalized_arrays_sha256": [
+        "9f74cdc987ddd59e4d7e1512545f299548ee13ebe2327e859ac3796169bbfd18",
+        "92daa0ec2ff6161d95ec8eadcb36ab80e0f297782798bc8cc93002bebdad359e",
+        "510674be2c76107121d83156bd1101e8514069762903739a9647720b463a6a70"
+      ],
+      "hash_seconds_included": 0.28698510001413524,
+      "population_order": "TPC-DS ORDER BY rowid; TPC-H retained archive array order"
+    }
+  },
+  "audit": {
+    "tpch": {
+      "unique_truth_functions": 1360,
+      "history_selections_verified": 1920,
+      "later_selections": 960,
+      "later_changed_from_initial_context": 960,
+      "max_scalar_kernel_error": 2.220446049250313e-16,
+      "exact_truth_refinements": 0,
+      "all_report_exclusions": 0,
+      "final_exclusions": 0,
+      "seconds": 342.1555583999725
+    },
+    "tpcds": {
+      "unique_truth_functions": 1120,
+      "history_selections_verified": 1920,
+      "later_selections": 960,
+      "later_changed_from_initial_context": 960,
+      "max_scalar_kernel_error": 2.220446049250313e-16,
+      "exact_truth_refinements": 0,
+      "all_report_exclusions": 0,
+      "final_exclusions": 0,
+      "seconds": 244.17948369996157
+    }
+  },
+  "interval": "Pointwise 95% paired whole-source percentile bootstrap; ratio of medians; 10000 resamples.",
+  "lifecycle": "Source validation, random permutation, materialization/write and prefix-cache preparation are common to all arms. M counts application sessions sharing snapshot preparation, not independent new permutations. C/M is setup-only accounting; C/M+T(h) models the measured warm state, not an executed multi-session trajectory. Input normalization/loading, JIT and integrity hashing are separately recorded.",
+  "input_manifest_sha256": "e690d8f33b323383b0166fb1f8d8634a9cdcebb53e199fc22fed90da02403b0a"
+}

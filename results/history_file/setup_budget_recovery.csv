@@ -1,0 +1,25 @@
+dataset,fraction,method,preparation_median,paired_saving_median,setup_budget_recovery_sessions,meaning
+tpcds,0.1,forward_wor,0.7283215000061316,0.0,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.1,cohort_wor,0.7283215000061316,0.06861400004709173,11,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.1,atomic_wor,0.7283215000061316,0.06581429997459054,12,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.1,coordinated_wor,0.7283215000061316,0.09423304989468317,8,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.1,rebase,0.7283215000061316,0.38192760001402376,2,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.1,indexed_wor,0.7283215000061316,-0.4909033500007354,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,forward_wor,0.7672673000488428,0.0,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,cohort_wor,0.7672673000488428,-0.03388424997683659,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,atomic_wor,0.7672673000488428,0.0314455999759955,25,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,coordinated_wor,0.7672673000488428,0.015368200023658463,50,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,rebase,0.7672673000488428,-0.25726934993872425,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpcds,0.9,indexed_wor,0.7672673000488428,-0.06457719992613442,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,forward_wor,1.5814057000679895,0.0,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,cohort_wor,1.5814057000679895,0.008105800021439756,196,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,atomic_wor,1.5814057000679895,-0.002073999959975495,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,coordinated_wor,1.5814057000679895,0.004465800011530546,355,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,rebase,1.5814057000679895,-0.24789930001134056,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.1,indexed_wor,1.5814057000679895,-0.24244434997672215,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,forward_wor,1.6268576000002213,0.0,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,cohort_wor,1.6268576000002213,0.04293394996784625,38,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,atomic_wor,1.6268576000002213,-0.004745599988382296,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,coordinated_wor,1.6268576000002213,0.03749945003073664,44,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,rebase,1.6268576000002213,-2.4689701499883085,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering
+tpch,0.9,indexed_wor,1.6268576000002213,-0.027376100013498217,,setup budget divided by paired continuation saving; common setup does not change matched lifecycle ordering

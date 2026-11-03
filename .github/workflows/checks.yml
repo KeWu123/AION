@@ -1,0 +1,23 @@
+name: checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  numerical-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m compileall -q code figures
+      - run: python code/validate_stopping_metadata.py
+      - run: python code/validate_position_scan.py --repetitions 5000
+      - run: python code/validate_coordinated_scan.py --repetitions 5000
+      - run: python code/validate_file_store.py
+      - run: python code/validate_ratio_contract.py
+      - run: python code/validate_session.py
