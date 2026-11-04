@@ -29,3 +29,15 @@ inference modules retain the same syntax trees as the retained implementation.
 
 The `checks` GitHub Actions workflow runs the numerical checks on Ubuntu with
 Python 3.11 when a commit or pull request is published.
+
+## Staggered-admission extension
+
+The extended driver preserves default positions, bounded pairs, intervals and
+resource counts for all three compared methods in an exact replay check.
+The public synthetic arrival run completed 18 sessions, 144 queries and
+306 reports with zero precision censors or truth exclusions. Its standalone
+analysis and compile-all check passed. The retained real study comprises
+720 complete sessions, 5,760 queries and 18,911 reports. All 240 source-paired
+method groups have matching definitions, quality levels and arrival scripts;
+4,160 independent scalar contribution checks have maximum error 2.22e-16.
+The CI workflow also exercises the arrival runner and analyzer.

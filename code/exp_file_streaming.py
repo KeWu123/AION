@@ -227,6 +227,15 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
     indexed = arm.startswith('indexed')
     cohort = arm == 'cohort_wor'
     schedule = getattr(args, 'participation_schedule', None) or {}
+    arrivals = getattr(args, 'admission_epochs', None)
+    if arrivals is not None:
+        arrivals = list(arrivals)
+        if (len(arrivals) != K or any(isinstance(x, bool) or int(x) != x or x < 0 for x in arrivals)
+                or arrivals != sorted(arrivals) or arrivals[0] != 0):
+            raise ValueError('admission_epochs must be K sorted nonnegative integers starting at zero')
+        if arm in ORACLES:
+            raise ValueError('scripted arrivals require admission-only function access')
+    measure_latency = getattr(args, 'measure_query_latency', False)
     started = time.perf_counter()
     states = [dict(us=[], vs=[], positions=[], fresh=[], n=0, reports=0, evals=0,
                    prefix=Prefix(), qid=None, group=None, registered=False,
@@ -281,6 +290,7 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
         report_seconds += elapsed
         if target or s['n'] >= caps[k] or census:
             reason = 'target' if target else 'census' if census else 'cap'
+            completed = time.perf_counter()-started if measure_latency else None
             done.append(dict(query=k, n=s['n'], contribution_evaluations=s['evals'],
                 lower=lo, upper=hi, target=target, censored=not target,
                 target_relative=targets[k], query_cap=caps[k], alpha=args.alpha/K,
@@ -293,6 +303,11 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
                 suffix_remaining='' if replacement else N-s['prefix'].n-s['n'],
                 draw_positions_sha256='', pairs_sha256='', fresh_count=0,
                 unique_positions=0, information=information, suffix_cap_applies=True))
+            if measure_latency:
+                done[-1].update(registration_elapsed_seconds=s['registration_elapsed_seconds'],
+                    completion_elapsed_seconds=completed,
+                    response_seconds=completed-s['registration_elapsed_seconds'],
+                    scheduled_arrival_epoch=arrivals[k] if arrivals is not None else '')
             events.append(dict(kind='finish', epoch=epoch, query=k, n=s['n'],
                                source_h=store.physical_rows, reason=reason))
             if scan is not None:
@@ -312,8 +327,11 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
         nonlocal next_query, wave, sampling_seconds, function_seconds, prefix_seconds, selection_seconds
         # A wave is fixed before any registration report/retirement is released.
         incoming = list(range(next_query, min(K, next_query+window-len(active))))
+        if arrivals is not None:
+            incoming = [k for k in incoming if arrivals[k] <= epoch]
         if not incoming:
             return
+        arrival_time = time.perf_counter()-started if measure_latency else None
         this_wave = wave
         wave += 1
         next_query += len(incoming)
@@ -339,6 +357,8 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
             s.update(registered=True, registration_h=store.physical_rows,
                      registration_seen=store.stats['seen_count'], registration_epoch=epoch,
                      wave=this_wave, group=this_wave if cohort else None)
+            if measure_latency:
+                s['registration_elapsed_seconds'] = arrival_time
             if scan is not None:
                 s['qid'] = scan.register()
             if arm == 'rebase':
@@ -368,6 +388,10 @@ def run_session(path, N, h, prefix, specs, arm, seed, args, trace_path, *, selec
             if next_query < K and len(active) < window:
                 admit()
                 if not active:
+                    if next_query < K and arrivals is not None:
+                        events.append(dict(kind='idle_round_skip', epoch=epoch,
+                                           next_epoch=arrivals[next_query]))
+                        epoch = max(epoch, arrivals[next_query])
                     continue
             participants = list(schedule.get(epoch, active))
             if (not participants or len(set(participants)) != len(participants)

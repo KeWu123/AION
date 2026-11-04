@@ -107,3 +107,34 @@ The implementation works on a fixed known-size population with a retained
 random-order source. Queries freeze their functions at admission. Serial
 returns condition on all earlier releases; an epoch commits participants and
 stakes before its joint release. Each query uses its own observation clock.
+
+## Matched staggered admissions
+
+The arrival study compares SeqWoR, CohortWoR and shared epochs on identical
+functions, error levels and precision targets. Gaps 0/1/2 count committed
+4096-observation service rounds, not milliseconds. Uniform targets are 10%;
+mixed targets cycle through 5/10/15/20%. Queries may continue to their own
+census. Timings include initialization, all query/file/cache work, interval
+reporting and close. Per-query response includes other queries' intervening
+work. Raw FileIO API bytes are distinct from newly exposed source rows.
+
+Run a synthetic check without external data:
+
+```sh
+python code/exp_arrival_file.py --synthetic-n 8192 --datasets tpch --reps 1 --out outputs/arrival_smoke
+```
+
+For real inputs, first generate the source snapshots with the history study
+(using 20 replicates and the default seeds), then reuse that completed study:
+
+```sh
+python code/exp_history_file.py --out outputs/history_sources --reps 20 --skip-sweep
+python code/exp_arrival_file.py --source-study outputs/history_sources --out outputs/arrivals --reps 20
+python code/analyze_arrival_file.py --study outputs/arrivals --out outputs/arrival_analysis
+```
+
+All 720 primary sessions and their source-paired summaries are retained under
+`results/arrival_file`. The paper reports pointwise 95% paired-bootstrap
+intervals from 20 source replicates and includes all settings. An earlier
+2.5%-target pretrial hit its sampling cap; it was retained separately and is
+not pooled with the complete-query comparison.

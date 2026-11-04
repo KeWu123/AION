@@ -1,0 +1,81 @@
+{
+  "status": "FROZEN_BEFORE_TIMING",
+  "arguments": {
+    "out": "experiments/innovation_20261104/arrival_file_formal_v2",
+    "reps": 20,
+    "datasets": [
+      "tpch",
+      "tpcds"
+    ],
+    "synthetic_n": 0,
+    "target": 0.1,
+    "source_study": "experiments/innovation_20261102/history_file_formal_v1"
+  },
+  "datasets": [
+    "tpch",
+    "tpcds"
+  ],
+  "fraction": 0.9,
+  "queries": 8,
+  "arrival_gaps": [
+    0,
+    1,
+    2
+  ],
+  "precision_profiles": [
+    "uniform",
+    "heterogeneous"
+  ],
+  "target": 0.1,
+  "precision_factors": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "cap": "own census (population size)",
+  "block": 4096,
+  "alpha": 0.05,
+  "per_query_alpha": ".05/8",
+  "methods": [
+    "forward_wor",
+    "cohort_wor",
+    "coordinated_wor"
+  ],
+  "arrival_clock": "Query k arrives at committed service round k*gap. All active queries receive one block per round. Empty rounds are skipped; there is no modeled wall-clock idle time.",
+  "definitions": "Eight weighted-price functions from the same initial 4096-row context. Only evaluated on admission. Same functions, targets, caps and arrivals across all arms.",
+  "source": "Reuse the 20 sealed random-order files and seeds from the history-file study; no resampling or preparation benefit is claimed.",
+  "latency": "Measured elapsed seconds from admission of the wave to the query final report, including intervening query work. Session continuation includes initialization, control, cache/file access, evaluations, inference and close.",
+  "accounting": "Warm OS cache. New source records and FileIO API bytes are distinct. JIT, trace serialization, map replay and deferred truth excluded from continuation.",
+  "analysis": "All cells and replicates retained. Ratio of medians, pointwise 95% paired whole-source bootstrap, 10000 resamples. Compare Epoch shared with both CohortWoR and SeqWoR.",
+  "sources": {
+    "code/anq/__init__.py": "ffad2f379056c79b88af567a9192c35a25a3ce1743bf1b0917f5993eee6e5e1b",
+    "code/anq/batch_renewal.py": "ced2fc1d4c6b35ed2f86fd0152af11054df3c0ad6d4549319dff5934c6293397",
+    "code/anq/betting.py": "76bbd945b884bc89359dc66fb9d8032de7a1cd2046e8b8eb603fedb621a60658",
+    "code/anq/bounds.py": "8c72fd87f1c896880bdbf567ade7079eefdb1eb90a3543cb8157ca19b73bfaa0",
+    "code/anq/complement.py": "e98b3e8158267096b74736d69ca5ad5fe29e66849a3b9d6d57225c85bc1ba811",
+    "code/anq/config.py": "6c3db0f8b2754a94bdcaba37cbb9ae6d90d74c433c7183e6b638fd273ac8e28d",
+    "code/anq/coordinated_scan.py": "64d9a64971039310a752fb5090aaa4cac95b703921276fd13aa0636535788c9b",
+    "code/anq/data.py": "0525db41c31253358c84a1956738c9b800a9f0a928f02112a072e39f61658b26",
+    "code/anq/engine.py": "c0177ccfe05bb6e9cc5fb2d2dfdd05c46dd31261288dc641963b8b6851c6ad42",
+    "code/anq/fast_ratio.py": "b5856ddf80d8ee2a822c3e7350102b0f3ae98bd4e1548a2cc055fd50bf3589d6",
+    "code/anq/file_store.py": "89200efd0ae51bf9af2046618cafae962857b53a05b3b76d849adac358943e3b",
+    "code/anq/forward_wr.py": "de51a620067c81de45c2022325a5acddf66b56210b2e2c1d1c4061f278fbfe0b",
+    "code/anq/joint_family.py": "1ac1bdddd9c53c4812c79a3debcfcd3a394105f91dee9594dccdcd702ee4eca3",
+    "code/anq/position_scan.py": "371dca4874c01ef7ee695a82ccf5ae0186ee4533e13d11bc642bcd5338f2416d",
+    "code/anq/ratio.py": "467073d2576d36e2f52c3a39f64b4747d694a2fddd49ccc8ad2da919af99e661",
+    "code/anq/ratio_grid.py": "07ad147a2bcf0a7b6c244aa28193f90cfdcbf8fabb53f8904b6ce4ee07d5d554",
+    "code/anq/renewal.py": "79056dc4188c8541ba78ed5686b858e7489d5edb3a7200befac028c300ce641c",
+    "code/anq/scan_pool.py": "786916840c89bffefc84fed6a9f6a223c77632d9b5729713b017a3c074070c2a",
+    "code/anq/selection.py": "4f91961f540783502fe2c264935a1f6d12e43e66fdaa890ec6ff2983d8491b62",
+    "code/anq/session.py": "33c92e1934589592c314c3c79e9fce6ccf898bce3580573e71fdf02662aa8c74",
+    "code/exp_arrival_file.py": "e5eae3953504855dd7f27e857a8a68f6847b4fb6efcbbd7ed598ed4604d1954c",
+    "code/exp_file_controlled.py": "df3a41b9ec06ed95ba50908334183fe15f3ddc701cd677a08926755e0544421e",
+    "code/exp_file_streaming.py": "e58215b8e95ede5115e6d18ce3862daa1df6b78b2e776aa90596815eccdf60fa",
+    "code/exp_history_file.py": "92a237ef43ee0ec232effe3534f7262fb28979095e2f2bb43bbf9e0c38f70f94",
+    "code/exp_interleaved_complete.py": "6d8de86ea183e0bb8b94321d96b07e713416e674714ced3271495a698e8939da",
+    "code/file_streaming_diagnostics.py": "7de443009f8697694bfae14194c054e94936b32ada1ce15cf7558502efbe040b",
+    "code/file_workload.py": "f804d4f58e95d10d88b7ecf37384a03ccadf0cc40f0ab64d1a363486aebaf53a"
+  },
+  "created_utc": "2026-11-04T10:12:12Z"
+}

@@ -21,3 +21,5 @@ jobs:
       - run: python code/validate_file_store.py
       - run: python code/validate_ratio_contract.py
       - run: python code/validate_session.py
+      - run: python code/exp_arrival_file.py --synthetic-n 8192 --datasets tpch --reps 1 --out outputs/arrival_smoke
+      - run: python code/analyze_arrival_file.py --study outputs/arrival_smoke --out outputs/arrival_analysis

@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "sessions": 720,
+  "queries": 5760,
+  "reports": 18911,
+  "cells": 36,
+  "contrasts": 144,
+  "censored": 0,
+  "final_exclusions": 0,
+  "all_report_exclusions": 0,
+  "input_manifest_sha256": "9deb183ac1dbdc44f748b532703f275101f952fe15f54cb831ae3230935e93df",
+  "scope": "2 datasets, h/T=.9, 3 round-driven arrival gaps, 2 precision profiles, 3 methods, 20 source-paired replicates. Query definitions, quality levels and arrival scripts match across methods.",
+  "interval": "Pointwise 95% paired whole-source percentile bootstrap, ratio of medians, 10000 resamples."
+}
